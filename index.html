@@ -8,16 +8,15 @@
 </head>
 <body>
     <script>
-       quadraticEquation = () => {
-        var a = 1;
-        var b = 2;
-        var c = 1;
-        var x1 = (-b + Math.sqrt(b*b - 4*a*c)) / (2*a);
-        var x2 = (-b - Math.sqrt(b*b - 4*a*c)) / (2*a);
-        return [x1, x2];
+       quadraticEquation = (a,b,c) => {
+        let x1 = (-b + Math.sqrt(Math.pow(b,2) - 4*a*c))/(2*a);
+        let x2 = (-b - Math.sqrt(Math.pow(b,2) - 4*a*c))/(2*a);
+        return [x1,x2];
+
        }
 
-       console.log(quadraticEquation());
+       console.log(quadraticEquation(1,-8,12));
+
        
     </script>
 </body>
